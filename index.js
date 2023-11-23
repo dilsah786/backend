@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const bcrypt = require("bcrypt");
 const { notesController } = require("./routes/notes.routes");
-const { authentication } = require("./authentication");
+const { authentication } = require("./middlewares/authentication");
 const cors = require("cors");
 const app = express();
 app.use(express.json());
